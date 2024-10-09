@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Number Guessing Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Binary Number Guessing Game</h1>
+        <p>Pick a number between 1 and 15, and I'll guess it!</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Card 1</h3>
+                <table>
+                    <tr>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>9</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>15</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <input type="checkbox" id="card1"> Is your number listed on this card??
+            </div>
+            
+            <div class="card">
+                <h3>Card 2</h3>
+                <table>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>15</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <input type="checkbox" id="card2"> Is your number listed on this card??
+            </div>
+            
+            <div class="card">
+                <h3>Card 3</h3>
+                <table>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>15</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <input type="checkbox" id="card3"> Is your number listed on this card??
+            </div>
+
+            <div class="card">
+                <h3>Card 4</h3>
+                <table>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>15</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <input type="checkbox" id="card4"> Is your number listed on this card??
+            </div>
+        </div>
+
+        <button onclick="revealNumber()">Reveal My Number</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
