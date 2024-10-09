@@ -1,9 +1,13 @@
+let reset = document.getElementById("reset")
+reset.style.display = "none"
 function revealNumber() {
     // Get checkbox states (true if checked)
     let card1Checked = document.getElementById("card1").checked;
     let card2Checked = document.getElementById("card2").checked;
     let card3Checked = document.getElementById("card3").checked;
     let card4Checked = document.getElementById("card4").checked;
+    reset.style.display = "flex"
+    // reset.location.reload()
 
     // Initialize binary digits
     let binaryNum = '';
